@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<World height="8" width="3">
+    <Start>
+        <Point x="1" y="0"/>
+    </Start>
+    <Goal>
+        <Point x="1" y="5"/>
+    </Goal>
+    <Ground>
+        <Point x="1" y="6"/>
+        <Color>brown</Color>
+    </Ground>
+    <Player>
+        <Point x="1" y="0"/>
+    </Player>
+</World>

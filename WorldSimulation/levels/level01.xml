@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<World height="10" width="9">
+    <Start>
+        <Point x="1" y="3"/>
+    </Start>
+    <Ground>
+        <Point x="1" y="4"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="1" y="6"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="2" y="4"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="2" y="6"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="3" y="4"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="3" y="6"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="3" y="8"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="4" y="6"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="4" y="8"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="5" y="1"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="5" y="6"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="5" y="8"/>
+        <Color>brown</Color>
+    </Ground>
+    <Goal>
+        <Point x="6" y="0"/>
+    </Goal>
+    <Ground>
+        <Point x="6" y="1"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="6" y="6"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="7" y="1"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="7" y="6"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ladder>
+        <Point x="7" y="1"/>
+    </Ladder>
+    <Ladder>
+        <Point x="7" y="2"/>
+    </Ladder>
+    <Ladder>
+        <Point x="7" y="3"/>
+    </Ladder>
+    <Ladder>
+        <Point x="7" y="4"/>
+    </Ladder>
+    <Ladder>
+        <Point x="7" y="5"/>
+    </Ladder>
+    <Player>
+        <Point x="1" y="3"/>
+    </Player>
+</World>

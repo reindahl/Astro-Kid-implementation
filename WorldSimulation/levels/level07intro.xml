@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<World height="4" width="11">
+    <Start>
+        <Point x="1" y="1"/>
+    </Start>
+    <Ground>
+        <Point x="1" y="2"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="2" y="2"/>
+        <Color>brown</Color>
+    </Ground>
+    <Teleport>
+        <Point x="3" y="1"/>
+    </Teleport>
+    <Ground>
+        <Point x="3" y="2"/>
+        <Color>brown</Color>
+    </Ground>
+    <Teleport>
+        <Point x="7" y="1"/>
+    </Teleport>
+    <Ground>
+        <Point x="7" y="2"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="8" y="2"/>
+        <Color>brown</Color>
+    </Ground>
+    <Goal>
+        <Point x="9" y="1"/>
+    </Goal>
+    <Ground>
+        <Point x="9" y="2"/>
+        <Color>brown</Color>
+    </Ground>
+    <Player>
+        <Point x="1" y="1"/>
+    </Player>
+</World>

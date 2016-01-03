@@ -1,0 +1,276 @@
+INFO     Running translator.
+INFO     translator input: ['pddl/domain-no-update2.pddl', '/home/reindahl/downward/pddl/run.pddl']
+INFO     translator arguments: []
+INFO     translator time_limit: None
+INFO     translator memory limit: None
+Parsing...
+Warning: Atom clear(pos-06-06) is specified twice in initial state specification
+Parsing: [0.020s CPU, 0.023s wall-clock]
+Normalizing task... [0.010s CPU, 0.006s wall-clock]
+Instantiating...
+Generating Datalog program... [0.010s CPU, 0.010s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.060s CPU, 0.061s wall-clock]
+Preparing model... [0.040s CPU, 0.038s wall-clock]
+Generated 1118 rules.
+Computing model... [2.870s CPU, 2.869s wall-clock]
+9034 relevant atoms
+129906 auxiliary atoms
+138940 final queue length
+620041 total queue pushes
+Completing instantiation... [0.510s CPU, 0.513s wall-clock]
+Instantiating: [3.590s CPU, 3.591s wall-clock]
+Computing fact groups...
+Finding invariants...
+23 initial candidates
+Finding invariants: [0.040s CPU, 0.038s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.001s wall-clock]
+Instantiating groups... [0.000s CPU, 0.005s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.001s wall-clock]
+Choosing groups...
+931 uncovered facts
+Choosing groups: [0.000s CPU, 0.002s wall-clock]
+Building translation key... [0.010s CPU, 0.005s wall-clock]
+Computing fact groups: [0.070s CPU, 0.066s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.002s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.003s wall-clock]
+Processing axioms: [0.080s CPU, 0.079s wall-clock]
+Translating task: [0.490s CPU, 0.490s wall-clock]
+7383 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+483 operators removed
+0 axioms removed
+992 propositions removed
+Detecting unreachable propositions: [0.210s CPU, 0.212s wall-clock]
+Translator variables: 442
+Translator derived variables: 257
+Translator facts: 1405
+Translator goal facts: 1
+Translator mutex groups: 6
+Translator total mutex groups size: 528
+Translator operators: 4312
+Translator axioms: 260
+Translator task size: 38479
+Translator peak memory: 154728 KB
+Writing output... [0.050s CPU, 0.063s wall-clock]
+Done! [4.460s CPU, 4.471s wall-clock]
+INFO     Running preprocessor.
+INFO     preprocessor input: output.sas
+INFO     preprocessor arguments: []
+INFO     preprocessor time_limit: None
+INFO     preprocessor memory limit: None
+Building causal graph...
+The causal graph is not acyclic.
+440 variables of 442 necessary
+0 of 6 mutex groups necessary.
+4312 of 4312 operators necessary.
+260 of 260 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor facts: 1401
+Preprocessor derived variables: 257
+Preprocessor task size: 37425
+Writing output...
+done
+INFO     Running search.
+INFO     search input: output
+INFO     search arguments: ['--search', 'astar(ff())']
+INFO     search time_limit: None
+INFO     search memory limit: None
+INFO     search executable: /home/reindahl/downward/src/search/downward-release
+reading input... [t=0.00s]
+Simplifying transitions... done!
+done reading input! [t=0.14s]
+packing state variables...done! [t=0.14s]
+Variables: 440
+Facts: 1401
+Bytes per state: 60
+Building successor generator...done! [t=0.24s]
+done initalizing global data [t=0.24s]
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+Initializing FF heuristic...
+Initializing additive heuristic...
+Simplifying 12239 unary operators... done! [10887 unary operators]
+New best heuristic value for ff: 37
+[g=0, 1 evaluated, 0 expanded, t=0.26s, 19440 KB]
+f = 37 [1 evaluated, 0 expanded, t=0.26s, 19440 KB]
+Initial heuristic value for ff: 37
+New best heuristic value for ff: 25
+[g=1, 2 evaluated, 1 expanded, t=0.26s, 19440 KB]
+New best heuristic value for ff: 24
+[g=2, 4 evaluated, 2 expanded, t=0.26s, 19440 KB]
+New best heuristic value for ff: 23
+[g=3, 5 evaluated, 3 expanded, t=0.26s, 19440 KB]
+New best heuristic value for ff: 22
+[g=5, 7 evaluated, 5 expanded, t=0.26s, 19440 KB]
+New best heuristic value for ff: 21
+[g=7, 9 evaluated, 7 expanded, t=0.26s, 19440 KB]
+New best heuristic value for ff: 20
+[g=8, 10 evaluated, 8 expanded, t=0.26s, 19440 KB]
+New best heuristic value for ff: 19
+[g=9, 11 evaluated, 9 expanded, t=0.26s, 19440 KB]
+New best heuristic value for ff: 18
+[g=10, 12 evaluated, 10 expanded, t=0.26s, 19440 KB]
+f = 38 [13 evaluated, 11 expanded, t=0.26s, 19440 KB]
+f = 39 [14 evaluated, 12 expanded, t=0.26s, 19440 KB]
+f = 40 [15 evaluated, 13 expanded, t=0.26s, 19440 KB]
+f = 41 [16 evaluated, 14 expanded, t=0.26s, 19440 KB]
+New best heuristic value for ff: 17
+[g=12, 26 evaluated, 22 expanded, t=0.26s, 19440 KB]
+New best heuristic value for ff: 16
+[g=13, 28 evaluated, 23 expanded, t=0.26s, 19440 KB]
+New best heuristic value for ff: 15
+[g=14, 30 evaluated, 24 expanded, t=0.26s, 19440 KB]
+New best heuristic value for ff: 14
+[g=15, 32 evaluated, 25 expanded, t=0.26s, 19440 KB]
+New best heuristic value for ff: 13
+[g=16, 33 evaluated, 26 expanded, t=0.26s, 19440 KB]
+New best heuristic value for ff: 12
+[g=17, 34 evaluated, 27 expanded, t=0.26s, 19440 KB]
+New best heuristic value for ff: 9
+[g=18, 35 evaluated, 28 expanded, t=0.26s, 19440 KB]
+New best heuristic value for ff: 7
+[g=20, 37 evaluated, 30 expanded, t=0.26s, 19440 KB]
+New best heuristic value for ff: 6
+[g=24, 166 evaluated, 136 expanded, t=0.30s, 19440 KB]
+New best heuristic value for ff: 5
+[g=25, 167 evaluated, 137 expanded, t=0.30s, 19440 KB]
+New best heuristic value for ff: 4
+[g=26, 168 evaluated, 138 expanded, t=0.30s, 19440 KB]
+f = 42 [597 evaluated, 544 expanded, t=0.38s, 19440 KB]
+f = 43 [654 evaluated, 599 expanded, t=0.40s, 19440 KB]
+f = 44 [741 evaluated, 680 expanded, t=0.42s, 19440 KB]
+f = 45 [774 evaluated, 712 expanded, t=0.42s, 19440 KB]
+f = 46 [828 evaluated, 755 expanded, t=0.44s, 19440 KB]
+f = 47 [905 evaluated, 814 expanded, t=0.44s, 19440 KB]
+f = 48 [1016 evaluated, 905 expanded, t=0.48s, 19440 KB]
+f = 49 [1110 evaluated, 975 expanded, t=0.48s, 19440 KB]
+f = 50 [1248 evaluated, 1077 expanded, t=0.52s, 19440 KB]
+f = 51 [1317 evaluated, 1138 expanded, t=0.52s, 19440 KB]
+f = 52 [1455 evaluated, 1247 expanded, t=0.54s, 19440 KB]
+f = 53 [1574 evaluated, 1328 expanded, t=0.58s, 19440 KB]
+Switch from bucket-based to heap-based queue at key = 972, num_pushes = 718
+f = 54 [1704 evaluated, 1430 expanded, t=0.60s, 19440 KB]
+f = 55 [1879 evaluated, 1557 expanded, t=0.62s, 19440 KB]
+f = 56 [2024 evaluated, 1656 expanded, t=0.66s, 19440 KB]
+f = 57 [2115 evaluated, 1740 expanded, t=0.68s, 19440 KB]
+f = 58 [2255 evaluated, 1850 expanded, t=0.70s, 19440 KB]
+f = 59 [2357 evaluated, 1918 expanded, t=0.72s, 19440 KB]
+f = 60 [2445 evaluated, 1984 expanded, t=0.74s, 19440 KB]
+f = 61 [2565 evaluated, 2075 expanded, t=0.76s, 19440 KB]
+f = 62 [2668 evaluated, 2163 expanded, t=0.78s, 19440 KB]
+New best heuristic value for ff: 3
+[g=59, 2722 evaluated, 2193 expanded, t=0.80s, 19440 KB]
+New best heuristic value for ff: 2
+[g=60, 2733 evaluated, 2203 expanded, t=0.80s, 19440 KB]
+New best heuristic value for ff: 1
+[g=61, 2735 evaluated, 2204 expanded, t=0.80s, 19440 KB]
+New best heuristic value for ff: 0
+[g=62, 2736 evaluated, 2205 expanded, t=0.80s, 19440 KB]
+Solution found!
+Actual search time: 0.54s [t=0.80s]
+walk player-01 pos-01-01 pos-02-01 pos-01-02 pos-02-02 right (1)
+walk player-01 pos-02-01 pos-03-01 pos-02-02 pos-03-02 right (1)
+walk player-01 pos-03-01 pos-04-01 pos-03-02 pos-04-02 right (1)
+slide player-01 pos-04-01 pos-05-01 pos-04-02 pos-05-02 right (1)
+slide player-01 pos-05-01 pos-06-01 pos-05-02 pos-06-02 right (1)
+slide player-01 pos-06-01 pos-07-01 pos-06-02 pos-07-02 right (1)
+slide player-01 pos-07-01 pos-08-01 pos-07-02 pos-08-02 right (1)
+walk player-01 pos-08-01 pos-09-01 pos-08-02 pos-09-02 right (1)
+walk player-01 pos-09-01 pos-10-01 pos-09-02 pos-10-02 right (1)
+walk player-01 pos-10-01 pos-11-01 pos-10-02 pos-11-02 right (1)
+walk player-01 pos-11-01 pos-12-01 pos-11-02 pos-12-02 right (1)
+push player-01 stone0 pos-12-01 pos-13-02 pos-13-01 pos-14-01 pos-13-02 pos-14-02 right (1)
+walk player-01 pos-12-01 pos-13-01 pos-12-02 pos-13-02 right (1)
+push player-01 stone0 pos-13-01 pos-14-02 pos-14-01 pos-15-01 pos-14-02 pos-15-02 right (1)
+walk player-01 pos-13-01 pos-14-01 pos-13-02 pos-14-02 right (1)
+push player-01 stone0 pos-14-01 pos-15-02 pos-15-01 pos-16-01 pos-15-02 pos-16-02 right (1)
+fall stone0 pos-16-01 pos-16-02 (0)
+fall stone0 pos-16-02 pos-16-03 (0)
+fall stone0 pos-16-03 pos-16-04 (0)
+fall stone0 pos-16-04 pos-16-05 (0)
+fallstop stone0 pos-16-05 pos-16-06 (0)
+slidestop stone0 pos-16-05 pos-16-06 pos-17-05 right (0)
+walk player-01 pos-14-01 pos-13-01 pos-14-02 pos-13-02 left (1)
+walk player-01 pos-13-01 pos-12-01 pos-13-02 pos-12-02 left (1)
+climbdown player-01 pos-12-01 pos-12-02 (1)
+climbdown player-01 pos-12-02 pos-12-03 (1)
+climbdown player-01 pos-12-03 pos-12-04 (1)
+climbdown player-01 pos-12-04 pos-12-05 (1)
+walk player-01 pos-12-05 pos-13-05 pos-12-06 pos-13-06 right (1)
+push player-01 robot1 pos-13-05 pos-14-06 pos-14-05 pos-15-05 pos-14-06 pos-15-06 right (1)
+slidestop robot1 pos-15-05 pos-15-06 pos-16-05 right (0)
+walk player-01 pos-13-05 pos-12-05 pos-13-06 pos-12-06 left (1)
+walk player-01 pos-12-05 pos-11-05 pos-12-06 pos-11-06 left (1)
+fall player-01 pos-11-05 pos-11-06 (1)
+fall player-01 pos-11-06 pos-11-07 (1)
+fall player-01 pos-11-07 pos-11-08 (1)
+fall player-01 pos-11-08 pos-11-09 (1)
+fall player-01 pos-11-09 pos-11-10 (1)
+fallstop player-01 pos-11-10 pos-11-11 (0)
+walk player-01 pos-11-10 pos-10-10 pos-11-11 pos-10-11 left (1)
+climbup player-01 pos-10-10 pos-10-09 (1)
+climbup player-01 pos-10-09 pos-10-08 (1)
+climbup player-01 pos-10-08 pos-10-07 (1)
+climbup player-01 pos-10-07 pos-10-06 (1)
+walk player-01 pos-10-06 pos-09-06 pos-10-07 pos-09-07 left (1)
+walk player-01 pos-09-06 pos-08-06 pos-09-07 pos-08-07 left (1)
+walk player-01 pos-08-06 pos-07-06 pos-08-07 pos-07-07 left (1)
+fall player-01 pos-07-06 pos-07-07 (1)
+fall player-01 pos-07-07 pos-07-08 (1)
+fall player-01 pos-07-08 pos-07-09 (1)
+pickupboots player-01 pos-07-09 green (0)
+fall player-01 pos-07-09 pos-07-10 (1)
+fallstop player-01 pos-07-10 pos-07-11 (0)
+walk player-01 pos-07-10 pos-06-10 pos-07-11 pos-06-11 left (1)
+walk player-01 pos-06-10 pos-05-10 pos-06-11 pos-05-11 left (1)
+walk player-01 pos-05-10 pos-04-10 pos-05-11 pos-04-11 left (1)
+walk player-01 pos-04-10 pos-03-10 pos-04-11 pos-03-11 left (1)
+walk player-01 pos-03-10 pos-02-10 pos-03-11 pos-02-11 left (1)
+pickupremote player-01 pos-02-10 remote0 (0)
+walk player-01 pos-02-10 pos-03-10 pos-02-11 pos-03-11 right (1)
+walk player-01 pos-03-10 pos-04-10 pos-03-11 pos-04-11 right (1)
+walk player-01 pos-04-10 pos-05-10 pos-04-11 pos-05-11 right (1)
+walk player-01 pos-05-10 pos-06-10 pos-05-11 pos-06-11 right (1)
+walk player-01 pos-06-10 pos-07-10 pos-06-11 pos-07-11 right (1)
+walk player-01 pos-07-10 pos-08-10 pos-07-11 pos-08-11 right (1)
+walk player-01 pos-08-10 pos-09-10 pos-08-11 pos-09-11 right (1)
+walk player-01 pos-09-10 pos-10-10 pos-09-11 pos-10-11 right (1)
+walk player-01 pos-10-10 pos-11-10 pos-10-11 pos-11-11 right (1)
+walk player-01 pos-11-10 pos-12-10 pos-11-11 pos-12-11 right (1)
+activaterobot pos-01-05 robot0 remote0 right (1)
+slide robot0 pos-01-05 pos-02-05 pos-01-06 pos-02-06 right (0)
+slide robot0 pos-02-05 pos-03-05 pos-02-06 pos-03-06 right (0)
+slide robot0 pos-03-05 pos-04-05 pos-03-06 pos-04-06 right (0)
+fall robot0 pos-04-05 pos-04-06 (0)
+slide robot0 pos-04-06 pos-05-06 pos-04-07 pos-05-07 right (0)
+slidestop robot0 pos-05-06 pos-05-07 pos-06-06 right (0)
+fallstop robot0 pos-05-06 pos-05-07 (0)
+walk player-01 pos-12-10 pos-13-10 pos-12-11 pos-13-11 right (1)
+walk player-01 pos-13-10 pos-14-10 pos-13-11 pos-14-11 right (1)
+walk player-01 pos-14-10 pos-15-10 pos-14-11 pos-15-11 right (1)
+Plan length: 80 step(s).
+Plan cost: 62
+Expanded 2206 state(s).
+Reopened 0 state(s).
+Evaluated 2736 state(s).
+Evaluations: 2741
+Generated 11883 state(s).
+Dead ends: 431 state(s).
+Expanded until last jump: 2163 state(s).
+Reopened until last jump: 0 state(s).
+Evaluated until last jump: 2668 state(s).
+Generated until last jump: 11621 state(s).
+Number of registered states: 2736
+Search time: 0.56s
+Total time: 0.80s
+Solution found.
+Peak memory: 19440 KB
+TotalTime: 11.428s

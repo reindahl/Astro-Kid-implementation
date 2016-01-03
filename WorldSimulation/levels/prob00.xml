@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<World height="7" width="3">
+    <Start>
+        <Point x="1" y="1"/>
+    </Start>
+    <Goal>
+        <Point x="1" y="5"/>
+    </Goal>
+    <Ladder>
+        <Point x="1" y="2"/>
+    </Ladder>
+    <Ladder>
+        <Point x="1" y="3"/>
+    </Ladder>
+    <Ladder>
+        <Point x="1" y="4"/>
+    </Ladder>
+    <Player>
+        <Point x="1" y="1"/>
+    </Player>
+</World>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<World height="5" width="8">
+    <Start>
+        <Point x="1" y="1"/>
+    </Start>
+    <Ground>
+        <Point x="1" y="2"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="2" y="2"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="3" y="2"/>
+        <Color>green</Color>
+    </Ground>
+    <Ground>
+        <Point x="4" y="2"/>
+        <Color>green</Color>
+    </Ground>
+    <Goal>
+        <Point x="5" y="2"/>
+    </Goal>
+    <Gate>
+        <Point x="5" y="3"/>
+        <Color>red</Color>
+    </Gate>
+    <Robot>
+        <Point x="2" y="1"/>
+        <Facing>right</Facing>
+    </Robot>
+    <Player>
+        <Point x="1" y="1"/>
+    </Player>
+</World>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<World height="9" width="7">
+    <Ground>
+        <Point x="1" y="3"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="1" y="5"/>
+        <Color>brown</Color>
+    </Ground>
+    <Start>
+        <Point x="1" y="6"/>
+    </Start>
+    <Ground>
+        <Point x="1" y="7"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="2" y="3"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="2" y="5"/>
+        <Color>purple</Color>
+    </Ground>
+    <Ground>
+        <Point x="2" y="7"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="3" y="3"/>
+        <Color>green</Color>
+    </Ground>
+    <Ground>
+        <Point x="3" y="5"/>
+        <Color>purple</Color>
+    </Ground>
+    <Ground>
+        <Point x="3" y="7"/>
+        <Color>blue</Color>
+    </Ground>
+    <Ground>
+        <Point x="4" y="3"/>
+        <Color>green</Color>
+    </Ground>
+    <Ground>
+        <Point x="4" y="5"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="4" y="7"/>
+        <Color>blue</Color>
+    </Ground>
+    <Goal>
+        <Point x="5" y="2"/>
+    </Goal>
+    <Ground>
+        <Point x="5" y="3"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="5" y="5"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ground>
+        <Point x="5" y="7"/>
+        <Color>brown</Color>
+    </Ground>
+    <Ladder>
+        <Point x="5" y="5"/>
+    </Ladder>
+    <Ladder>
+        <Point x="5" y="6"/>
+    </Ladder>
+    <Ladder>
+        <Point x="1" y="3"/>
+    </Ladder>
+    <Ladder>
+        <Point x="1" y="4"/>
+    </Ladder>
+    <Player>
+        <Point x="1" y="6"/>
+    </Player>
+    <Boot>
+        <Point x="2" y="2"/>
+        <Color>green</Color>
+    </Boot>
+    <Boot>
+        <Point x="4" y="4"/>
+        <Color>purple</Color>
+    </Boot>
+    <Boot>
+        <Point x="2" y="6"/>
+        <Color>blue</Color>
+    </Boot>
+</World>

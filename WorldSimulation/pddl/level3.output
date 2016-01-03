@@ -1,0 +1,223 @@
+INFO     Running translator.
+INFO     translator input: ['pddl/domain-no-update2.pddl', '/home/reindahl/downward/pddl/run.pddl']
+INFO     translator arguments: []
+INFO     translator time_limit: None
+INFO     translator memory limit: None
+Parsing...
+Parsing: [0.020s CPU, 0.014s wall-clock]
+Normalizing task... [0.000s CPU, 0.005s wall-clock]
+Instantiating...
+Generating Datalog program... [0.010s CPU, 0.006s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.050s CPU, 0.055s wall-clock]
+Preparing model... [0.050s CPU, 0.046s wall-clock]
+Generated 1118 rules.
+Computing model... [1.640s CPU, 1.651s wall-clock]
+4935 relevant atoms
+79039 auxiliary atoms
+83974 final queue length
+222514 total queue pushes
+Completing instantiation... [0.230s CPU, 0.236s wall-clock]
+Instantiating: [2.050s CPU, 2.052s wall-clock]
+Computing fact groups...
+Finding invariants...
+23 initial candidates
+Finding invariants: [0.040s CPU, 0.044s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.002s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+558 uncovered facts
+Choosing groups: [0.000s CPU, 0.001s wall-clock]
+Building translation key... [0.000s CPU, 0.002s wall-clock]
+Computing fact groups: [0.050s CPU, 0.058s wall-clock]
+Building STRIPS to SAS dictionary... [0.010s CPU, 0.001s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.001s wall-clock]
+Processing axioms: [0.020s CPU, 0.019s wall-clock]
+Translating task: [0.200s CPU, 0.202s wall-clock]
+3770 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+77 operators removed
+0 axioms removed
+584 propositions removed
+Detecting unreachable propositions: [0.100s CPU, 0.099s wall-clock]
+Translator variables: 271
+Translator derived variables: 140
+Translator facts: 850
+Translator goal facts: 1
+Translator mutex groups: 5
+Translator total mutex groups size: 313
+Translator operators: 2179
+Translator axioms: 140
+Translator task size: 18359
+Translator peak memory: 110624 KB
+Writing output... [0.030s CPU, 0.031s wall-clock]
+Done! [2.470s CPU, 2.473s wall-clock]
+INFO     Running preprocessor.
+INFO     preprocessor input: output.sas
+INFO     preprocessor arguments: []
+INFO     preprocessor time_limit: None
+INFO     preprocessor memory limit: None
+Building causal graph...
+The causal graph is not acyclic.
+263 variables of 271 necessary
+0 of 5 mutex groups necessary.
+2179 of 2179 operators necessary.
+140 of 140 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor facts: 834
+Preprocessor derived variables: 140
+Preprocessor task size: 17506
+Writing output...
+done
+INFO     Running search.
+INFO     search input: output
+INFO     search arguments: ['--search', 'astar(ff())']
+INFO     search time_limit: None
+INFO     search memory limit: None
+INFO     search executable: /home/reindahl/downward/src/search/downward-release
+reading input... [t=0.00s]
+Simplifying transitions... done!
+done reading input! [t=0.06s]
+packing state variables...done! [t=0.06s]
+Variables: 263
+Facts: 834
+Bytes per state: 40
+Building successor generator...done! [t=0.08s]
+done initalizing global data [t=0.08s]
+Conducting best first search with reopening closed nodes, (real) bound = 2147483647
+Initializing FF heuristic...
+Initializing additive heuristic...
+Simplifying 5638 unary operators... done! [4595 unary operators]
+New best heuristic value for ff: 9
+[g=0, 1 evaluated, 0 expanded, t=0.10s, 8976 KB]
+f = 9 [1 evaluated, 0 expanded, t=0.10s, 8976 KB]
+Initial heuristic value for ff: 9
+New best heuristic value for ff: 8
+[g=1, 3 evaluated, 1 expanded, t=0.10s, 8976 KB]
+New best heuristic value for ff: 7
+[g=2, 4 evaluated, 2 expanded, t=0.10s, 8976 KB]
+New best heuristic value for ff: 6
+[g=3, 5 evaluated, 3 expanded, t=0.10s, 8976 KB]
+New best heuristic value for ff: 5
+[g=4, 6 evaluated, 4 expanded, t=0.10s, 8976 KB]
+New best heuristic value for ff: 4
+[g=5, 7 evaluated, 5 expanded, t=0.10s, 8976 KB]
+f = 11 [8 evaluated, 6 expanded, t=0.10s, 8976 KB]
+f = 13 [10 evaluated, 7 expanded, t=0.10s, 8976 KB]
+f = 15 [15 evaluated, 11 expanded, t=0.10s, 8976 KB]
+f = 16 [31 evaluated, 24 expanded, t=0.10s, 8976 KB]
+f = 17 [32 evaluated, 25 expanded, t=0.10s, 8976 KB]
+f = 18 [36 evaluated, 30 expanded, t=0.10s, 8976 KB]
+f = 19 [53 evaluated, 42 expanded, t=0.10s, 8976 KB]
+f = 20 [53 evaluated, 43 expanded, t=0.10s, 8976 KB]
+f = 21 [58 evaluated, 50 expanded, t=0.10s, 8976 KB]
+f = 22 [81 evaluated, 67 expanded, t=0.10s, 8976 KB]
+f = 23 [103 evaluated, 83 expanded, t=0.10s, 8976 KB]
+f = 24 [132 evaluated, 110 expanded, t=0.10s, 8976 KB]
+f = 25 [136 evaluated, 117 expanded, t=0.12s, 8976 KB]
+f = 26 [172 evaluated, 150 expanded, t=0.12s, 8976 KB]
+f = 27 [221 evaluated, 187 expanded, t=0.12s, 8976 KB]
+f = 28 [226 evaluated, 195 expanded, t=0.12s, 8976 KB]
+f = 29 [238 evaluated, 213 expanded, t=0.12s, 8976 KB]
+f = 30 [286 evaluated, 249 expanded, t=0.12s, 8976 KB]
+f = 31 [295 evaluated, 257 expanded, t=0.12s, 8976 KB]
+f = 32 [313 evaluated, 280 expanded, t=0.14s, 8976 KB]
+f = 33 [314 evaluated, 281 expanded, t=0.14s, 8976 KB]
+f = 34 [322 evaluated, 289 expanded, t=0.14s, 8976 KB]
+f = 35 [326 evaluated, 293 expanded, t=0.14s, 8976 KB]
+f = 37 [329 evaluated, 296 expanded, t=0.14s, 8976 KB]
+f = 38 [335 evaluated, 304 expanded, t=0.14s, 8976 KB]
+f = 44 [337 evaluated, 306 expanded, t=0.14s, 8976 KB]
+f = 45 [338 evaluated, 307 expanded, t=0.14s, 8976 KB]
+f = 46 [341 evaluated, 310 expanded, t=0.14s, 8976 KB]
+f = 47 [343 evaluated, 312 expanded, t=0.14s, 8976 KB]
+f = 48 [345 evaluated, 314 expanded, t=0.14s, 8976 KB]
+New best heuristic value for ff: 3
+[g=32, 373 evaluated, 335 expanded, t=0.14s, 8976 KB]
+New best heuristic value for ff: 2
+[g=33, 375 evaluated, 337 expanded, t=0.14s, 8976 KB]
+New best heuristic value for ff: 1
+[g=34, 376 evaluated, 338 expanded, t=0.14s, 8976 KB]
+New best heuristic value for ff: 0
+[g=35, 377 evaluated, 339 expanded, t=0.14s, 8976 KB]
+Solution found!
+Actual search time: 0.04s [t=0.14s]
+walk player-01 pos-03-05 pos-02-05 pos-03-06 pos-02-06 left (1)
+climbup player-01 pos-02-05 pos-02-04 (1)
+climbup player-01 pos-02-04 pos-02-03 (1)
+climbup player-01 pos-02-03 pos-02-02 (1)
+push player-01 stone3 pos-02-02 pos-03-03 pos-03-02 pos-04-02 pos-03-03 pos-04-03 right (1)
+walk player-01 pos-02-02 pos-03-02 pos-02-03 pos-03-03 right (1)
+climbup player-01 pos-03-02 pos-03-01 (1)
+climbup player-01 pos-03-01 pos-03-00 (1)
+push player-01 stone2 pos-03-00 pos-04-01 pos-04-00 pos-05-00 pos-04-01 pos-05-01 right (1)
+fall stone2 pos-05-00 pos-05-01 (0)
+fall stone2 pos-05-01 pos-05-02 (0)
+fall stone2 pos-05-02 pos-05-03 (0)
+fallstop stone2 pos-05-03 pos-05-04 (0)
+slidestop stone2 pos-05-03 pos-05-04 pos-06-03 right (0)
+climbdown player-01 pos-03-00 pos-03-01 (1)
+climbdown player-01 pos-03-01 pos-03-02 (1)
+push player-01 stone3 pos-03-02 pos-04-03 pos-04-02 pos-05-02 pos-04-03 pos-05-03 right (1)
+walk player-01 pos-03-02 pos-04-02 pos-03-03 pos-04-03 right (1)
+push player-01 stone3 pos-04-02 pos-05-03 pos-05-02 pos-06-02 pos-05-03 pos-06-03 right (1)
+fall stone3 pos-06-02 pos-06-03 (0)
+fallstop stone3 pos-06-03 pos-06-04 (0)
+slidestop stone3 pos-06-03 pos-06-04 pos-07-03 right (0)
+walk player-01 pos-04-02 pos-05-02 pos-04-03 pos-05-03 right (1)
+walk player-01 pos-05-02 pos-06-02 pos-05-03 pos-06-03 right (1)
+walk player-01 pos-06-02 pos-07-02 pos-06-03 pos-07-03 right (1)
+walk player-01 pos-07-02 pos-08-02 pos-07-03 pos-08-03 right (1)
+slide player-01 pos-08-02 pos-09-02 pos-08-03 pos-09-03 right (1)
+slide player-01 pos-09-02 pos-10-02 pos-09-03 pos-10-03 right (1)
+slide player-01 pos-10-02 pos-11-02 pos-10-03 pos-11-03 right (1)
+slide player-01 stone1 pos-11-02 pos-12-02 pos-11-03 pos-13-03 pos-13-02 right (1)
+fall stone1 pos-13-02 pos-13-03 (0)
+fall stone1 pos-13-03 pos-13-04 (0)
+fallstop stone1 pos-13-04 pos-13-05 (0)
+climbdown player-01 pos-12-02 pos-12-03 (1)
+climbdown player-01 pos-12-03 pos-12-04 (1)
+walk player-01 pos-12-04 pos-11-04 pos-12-05 pos-11-05 left (1)
+slide player-01 pos-11-04 pos-10-04 pos-11-05 pos-10-05 left (1)
+slide player-01 pos-10-04 pos-09-04 pos-10-05 pos-09-05 left (1)
+push player-01 stone0 pos-09-04 pos-08-05 pos-08-04 pos-07-04 pos-08-05 pos-07-05 left (1)
+fall stone0 pos-07-04 pos-07-05 (0)
+fall stone0 pos-07-05 pos-07-06 (0)
+fall stone0 pos-07-06 pos-07-07 (0)
+fallstop stone0 pos-07-07 pos-07-08 (0)
+slidestop stone0 pos-07-07 pos-07-08 pos-06-07 left (0)
+walk player-01 pos-09-04 pos-08-04 pos-09-05 pos-08-05 left (1)
+walk player-01 pos-08-04 pos-07-04 pos-08-05 pos-07-05 left (1)
+fall player-01 pos-07-04 pos-07-05 (1)
+fall player-01 pos-07-05 pos-07-06 (1)
+fallstop player-01 pos-07-06 pos-07-07 (0)
+walk player-01 pos-07-06 pos-08-06 pos-07-07 pos-08-07 right (1)
+walk player-01 pos-08-06 pos-09-06 pos-08-07 pos-09-07 right (1)
+walk player-01 pos-09-06 pos-10-06 pos-09-07 pos-10-07 right (1)
+Plan length: 52 step(s).
+Plan cost: 35
+Expanded 340 state(s).
+Reopened 0 state(s).
+Evaluated 377 state(s).
+Evaluations: 377
+Generated 2366 state(s).
+Dead ends: 29 state(s).
+Expanded until last jump: 314 state(s).
+Reopened until last jump: 0 state(s).
+Evaluated until last jump: 345 state(s).
+Generated until last jump: 2183 state(s).
+Number of registered states: 377
+Search time: 0.06s
+Total time: 0.14s
+Solution found.
+Peak memory: 8976 KB
+TotalTime: 5.3s
